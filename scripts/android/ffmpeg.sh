@@ -340,7 +340,7 @@ echo -n -e "\n${LIB_NAME}: "
 
 if [[ -z ${NO_WORKSPACE_CLEANUP_ffmpeg} ]]; then
   echo -e "INFO: Cleaning workspace for ${LIB_NAME}\n" 1>>"${BASEDIR}"/build.log 2>&1
-  make distclean 2>/dev/null 1>/dev/null
+  make distclean 1>>"${BASEDIR}"/build.log 2>&1
 fi
 
 # UPDATE BUILD FLAGS

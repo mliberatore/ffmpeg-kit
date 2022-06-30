@@ -80,42 +80,42 @@ mkdir -p "${COCOAPODS_DIRECTORY}" || exit 1
 rm -rf "${ALL_UNIVERSAL_DIRECTORY}"
 mkdir -p "${ALL_UNIVERSAL_DIRECTORY}" || exit 1
 
-# MIN RELEASE
-cd "${BASEDIR}/../.." || exit 1
-./ios.sh ${IOS_LTS_OPTIONS} || exit 1
-create_package "min" "$1.LTS" "${LIBRARY_DESCRIPTION_MIN}" || exit 1
+# # MIN RELEASE
+# cd "${BASEDIR}/../.." || exit 1
+# ./ios.sh ${IOS_LTS_OPTIONS} || exit 1
+# create_package "min" "$1.LTS" "${LIBRARY_DESCRIPTION_MIN}" || exit 1
 
-# MIN-GPL RELEASE
-cd "${BASEDIR}/../.." || exit 1
-./ios.sh ${IOS_LTS_OPTIONS} ${GPL_PACKAGES} || exit 1
-create_package "min-gpl" "$1.LTS" "${LIBRARY_DESCRIPTION_MIN_GPL}" || exit 1
+# # MIN-GPL RELEASE
+# cd "${BASEDIR}/../.." || exit 1
+# ./ios.sh ${IOS_LTS_OPTIONS} ${GPL_PACKAGES} || exit 1
+# create_package "min-gpl" "$1.LTS" "${LIBRARY_DESCRIPTION_MIN_GPL}" || exit 1
 
-# HTTPS RELEASE
-cd "${BASEDIR}/../.." || exit 1
-./ios.sh ${IOS_LTS_OPTIONS} ${HTTPS_PACKAGES} || exit 1
-create_package "https" "$1.LTS" "${LIBRARY_DESCRIPTION_HTTPS}" || exit 1
+# # HTTPS RELEASE
+# cd "${BASEDIR}/../.." || exit 1
+# ./ios.sh ${IOS_LTS_OPTIONS} ${HTTPS_PACKAGES} || exit 1
+# create_package "https" "$1.LTS" "${LIBRARY_DESCRIPTION_HTTPS}" || exit 1
 
 # HTTPS-GPL RELEASE
 cd "${BASEDIR}/../.." || exit 1
 ./ios.sh ${IOS_LTS_OPTIONS} ${HTTPS_PACKAGES} ${GPL_PACKAGES} || exit 1
 create_package "https-gpl" "$1.LTS" "${LIBRARY_DESCRIPTION_HTTPS_GPL}" || exit 1
 
-# AUDIO RELEASE
-cd "${BASEDIR}/../.." || exit 1
-./ios.sh ${IOS_LTS_OPTIONS} ${AUDIO_PACKAGES} || exit 1
-create_package "audio" "$1.LTS" "${LIBRARY_DESCRIPTION_AUDIO}" || exit 1
+# # AUDIO RELEASE
+# cd "${BASEDIR}/../.." || exit 1
+# ./ios.sh ${IOS_LTS_OPTIONS} ${AUDIO_PACKAGES} || exit 1
+# create_package "audio" "$1.LTS" "${LIBRARY_DESCRIPTION_AUDIO}" || exit 1
 
-# VIDEO RELEASE
-cd "${BASEDIR}/../.." || exit 1
-./ios.sh ${IOS_LTS_OPTIONS} ${VIDEO_PACKAGES} || exit 1
-create_package "video" "$1.LTS" "${LIBRARY_DESCRIPTION_VIDEO}" || exit 1
+# # VIDEO RELEASE
+# cd "${BASEDIR}/../.." || exit 1
+# ./ios.sh ${IOS_LTS_OPTIONS} ${VIDEO_PACKAGES} || exit 1
+# create_package "video" "$1.LTS" "${LIBRARY_DESCRIPTION_VIDEO}" || exit 1
 
-# FULL RELEASE
-cd "${BASEDIR}/../.." || exit 1
-./ios.sh ${IOS_LTS_OPTIONS} ${FULL_PACKAGES} || exit 1
-create_package "full" "$1.LTS" "${LIBRARY_DESCRIPTION_FULL}" || exit 1
+# # FULL RELEASE
+# cd "${BASEDIR}/../.." || exit 1
+# ./ios.sh ${IOS_LTS_OPTIONS} ${FULL_PACKAGES} || exit 1
+# create_package "full" "$1.LTS" "${LIBRARY_DESCRIPTION_FULL}" || exit 1
 
-# FULL-GPL RELEASE
-cd "${BASEDIR}/../.." || exit 1
-./ios.sh ${IOS_LTS_OPTIONS} ${FULL_PACKAGES} ${GPL_PACKAGES} || exit 1
-create_package "full-gpl" "$1.LTS" "${LIBRARY_DESCRIPTION_FULL_GPL}" || exit 1
+# # FULL-GPL RELEASE
+# cd "${BASEDIR}/../.." || exit 1
+# ./ios.sh ${IOS_LTS_OPTIONS} ${FULL_PACKAGES} ${GPL_PACKAGES} || exit 1
+# create_package "full-gpl" "$1.LTS" "${LIBRARY_DESCRIPTION_FULL_GPL}" || exit 1
