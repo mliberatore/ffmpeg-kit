@@ -31,7 +31,7 @@ disable_ios_architecture_not_supported_on_detected_sdk_version() {
   armv7 | armv7s | i386)
 
     # SUPPORTED UNTIL IOS SDK 10
-    if [[ $2 == 11* ]] || [[ $2 == 12* ]] || [[ $2 == 13* ]] || [[ $2 == 14* ]] || [[ $2 == 15* ]]; then
+    if [[ $2 == 11* ]] || [[ $2 == 12* ]] || [[ $2 == 13* ]] || [[ $2 == 14* ]] || [[ $2 == 15* ]] || [[ $2 == 16* ]]; then
       local SUPPORTED=0
     else
       local SUPPORTED=1
@@ -40,7 +40,7 @@ disable_ios_architecture_not_supported_on_detected_sdk_version() {
   arm64e)
 
     # INTRODUCED IN IOS SDK 10
-    if [[ $2 == 10* ]] || [[ $2 == 11* ]] || [[ $2 == 12* ]] || [[ $2 == 13* ]] || [[ $2 == 14* ]] || [[ $2 == 15* ]]; then
+    if [[ $2 == 10* ]] || [[ $2 == 11* ]] || [[ $2 == 12* ]] || [[ $2 == 13* ]] || [[ $2 == 14* ]] || [[ $2 == 15* ]] || [[ $2 == 16* ]]; then
       local SUPPORTED=1
     else
       local SUPPORTED=0
@@ -49,7 +49,7 @@ disable_ios_architecture_not_supported_on_detected_sdk_version() {
   x86-64-mac-catalyst)
 
     # INTRODUCED IN IOS SDK 13
-    if [[ $2 == 13* ]] || [[ $2 == 14* ]] || [[ $2 == 15* ]]; then
+    if [[ $2 == 13* ]] || [[ $2 == 14* ]] || [[ $2 == 15* ]] || [[ $2 == 16* ]]; then
       local SUPPORTED=1
     else
       local SUPPORTED=0
@@ -58,7 +58,7 @@ disable_ios_architecture_not_supported_on_detected_sdk_version() {
   arm64-*)
 
     # INTRODUCED IN IOS SDK 14
-    if [[ $2 == 14* ]] || [[ $2 == 15* ]]; then
+    if [[ $2 == 14* ]] || [[ $2 == 15* ]] || [[ $2 == 16* ]]; then
       local SUPPORTED=1
     else
       local SUPPORTED=0
