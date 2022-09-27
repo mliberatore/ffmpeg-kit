@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
     s.source            = { :http => "https://github.com/tanersener/ffmpeg-kit/releases/download/vVERSION/ffmpeg-kit-audio-VERSION-ios-framework.zip" }
 
-    s.ios.deployment_target = '9.3'
+    s.ios.deployment_target = '15.0'
     s.ios.frameworks    = 'AudioToolbox','AVFoundation','CoreMedia','VideoToolbox'
     s.ios.vendored_frameworks = 'ffmpegkit.framework', 'libavcodec.framework', 'libavdevice.framework', 'libavfilter.framework', 'libavformat.framework', 'libavutil.framework', 'libswresample.framework', 'libswscale.framework', 'lame.framework', 'libilbc.framework', 'libogg.framework', 'libopencore-amrnb.framework', 'libsndfile.framework', 'libvorbis.framework', 'libvorbisenc.framework', 'libvorbisfile.framework', 'opus.framework', 'shine.framework', 'soxr.framework', 'speex.framework', 'twolame.framework', 'vo-amrwbenc.framework'
 
