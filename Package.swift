@@ -11,7 +11,6 @@ let package = Package(
         .library(
             name: "FFmpegKitWrapper",
             targets: [
-                "FFmpegKitWrapper",
                 "ffmpegkit",
                 "libavcodec",
                 "libavdevice",
@@ -29,15 +28,12 @@ let package = Package(
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "FFmpegKitWrapper",
-            dependencies: []),
 
-            .binaryTarget(
-                name: "ffmpegkit",
-                url: "https://github.com/mliberatore/ffmpeg-kit/releases/download/5.1-test/ffmpegkit.xcframework.zip",
-                checksum: "106ed7984ed4a7f66b2466b24d671bd99d77d28e15cccaffab5d72ca37d0dfef"
-            ),
+        .binaryTarget(
+            name: "ffmpegkit",
+            url: "https://github.com/mliberatore/ffmpeg-kit/releases/download/5.1-test/ffmpegkit.xcframework.zip",
+            checksum: "106ed7984ed4a7f66b2466b24d671bd99d77d28e15cccaffab5d72ca37d0dfef"
+        ),
         .binaryTarget(
             name: "libavcodec",
             url: "https://github.com/mliberatore/ffmpeg-kit/releases/download/5.1-test/libavcodec.xcframework.zip",
